@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply For Loan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .loan-details {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .detail-item {
+      margin-bottom: 10px;
+    }
+
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    .value {
+      color: #333;
+    }
+      
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Apply For a Loan</h1>
+    <div class="loan-details">
+      <form action="/apply-loan-success">
+        <div class="form-item">
+          Name: <input type="text" name="name">
+        </div>
+        <div class="form-item">
+          Email: <input type="text" name="email">
+        </div>
+        <div class="form-item">
+          Phone: <input type="text" name="phone">
+        </div>
+        <div class="form-item">
+          Loan Amount: <input type="text" name="loan_amount">
+        </div>
+        <div class="form-item">
+          Reason: <textarea name="reason"></textarea>
+        </div>
+        <div class="form-item">
+          <label><input type="checkbox" name="agree">I agree to the terms and conditions</label>
+        </div>
+        <div class="form-item">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
